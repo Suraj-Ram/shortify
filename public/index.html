@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <script src="./bootstrap/jquery-3.3.1.slim.min.js"></script>
+    <script src="./bootstrap/popper.min.js"></script>
+    <script src="./bootstrap/bootstrap.min.js"></script>
+    <script src="./bootstrap/fontawesome.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./js/app.js"></script>
+    <title>Link Shortner</title>
+</head>
+<body id="bdy">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="#">Shortify</a>
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Analytics</a>
+        </li>
+        </ul>
+      </nav>
+
+
+
+
+    <div class="container main-cont">
+        <div class="row mt-2">
+            <div class="col-lg ">
+                <h1 class="text-center display-3">Shorten links in seconds</h2>
+            </div>                
+        </div>
+        <div class="row mt-4">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Enter link here..." id="fullUrlInput">
+                
+            </div>
+        </div>
+        <div class="row mt-1 mb-1" id="urlValidity">
+            <!-- <p class="text-center mx-auto font-weight-bold text-success"><i class="fa fa-check"></i> URL is valid</p> -->
+            <!-- <p class="text-center mx-auto font-weight-bold text-danger"><i class="fa fa-times"></i> URL is not valid</p> -->
+        </div>
+        <div class="row mt-2">
+            <div class="col-lg">
+                <h4>Pick Short ID</h4>
+
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">shortify.surajram.xyz/s/</span>
+                    </div>
+                    
+                    <input type="text" class="form-control" id="urlIdInput">
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <button class="btn btn-primary btn-lg subbtn btn-disabled" id="subBtn">Shortify!</button>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col" id="progressBarHolder">
+                <!-- <div class="progress" style="height: 30px;" width=>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                </div> -->
+            </div>
+        </div>
+        
+        
+        <div class="row mt-4" id="alertDiv">
+            
+        </div>
+    </div>
+    
+</body>
+</html>
